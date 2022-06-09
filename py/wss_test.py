@@ -11,7 +11,8 @@ def get_collator_list():
         module='ParachainStaking',
         storage_function='CandidatePool'
     )
-    print(result)
+    for row in result:
+        print(row)
 
 def main():
     get_collator_list()
