@@ -12,7 +12,8 @@ def get_collator_list():
         storage_function='CandidatePool'
     )
     for row in result:
-        print(row)
+        owner = row['owner']
+        amount = row['amount'] / 10**18
 
 def main():
     get_collator_list()
