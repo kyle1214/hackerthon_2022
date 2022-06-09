@@ -14,6 +14,7 @@ def get_collator_list():
     for row in result:
         owner = row['owner']
         amount = row['amount'] / 10**18
+        print(f'{owner}: {amount}: ')
 
 def main():
     get_collator_list()
